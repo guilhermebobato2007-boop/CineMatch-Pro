@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Catálogo</h1>
+<nav>
+<a href="index.html">Cadastro</a>
+<a href="catalogo.html">Catálogo</a>
+</nav>
+</header>
+
+<section id="estatisticas"></section>
+
+<section class="filtros-container">
+    <div class="busca-wrapper">
+        <input type="text" id="inputBusca" placeholder="Pesquisar filmes por título...">
+    </div>
+    <div class="filtros-wrapper">
+        <select id="filtroCategoria">
+            <option value="Todos">Todas as Categorias</option>
+            <option value="Ação">Ação</option>
+            <option value="Comédia">Comédia</option>
+            <option value="Drama">Drama</option>
+            <option value="Ficção Científica">Ficção Científica</option>
+            <option value="Terror">Terror</option>
+            <option value="Documentário">Documentário</option>
+            <option value="Outros">Outros</option>
+        </select>
+        <button id="btnVerFavoritos">Ver Favoritos ❤️</button>
+    </div>
+</section>
+
+<section id="catalogo" class="catalogo"></section>
+
+<!-- Modal Modo Cinema -->
+<div id="modalCinema" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="videoContainer"></div>
+        <div id="detalhesFilme"></div>
+    </div>
+</div>
+
+<script src="js/display.js"></script>
+</body>
+</html>
