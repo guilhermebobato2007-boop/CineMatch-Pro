@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineMatch Pro</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>CineMatch Pro</h1>
+<nav>
+<a href="index.html">Cadastro</a>
+<a href="catalogo.html">Catálogo</a>
+<a href="https://www.imdb.com/chart/top/" target="_blank">Sugestões</a>
+</nav>
+</header>
+
+<main>
+    <section>
+        <form id="filmeForm">
+            <h2 style="text-align: center; margin-bottom: 20px;">Cadastrar Novo Filme</h2>
+            
+            <label for="titulo">Título do Filme</label>
+            <input id="titulo" placeholder="Ex: Interestelar" required>
+            
+            <label for="capa">URL da Imagem de Capa</label>
+            <input id="capa" placeholder="https://link-da-imagem.jpg" required>
+            
+            <label for="youtube">ID do Vídeo no YouTube</label>
+            <input id="youtube" placeholder="Ex: dqw4w9wgxcq" required>
+            
+            <label for="categoria">Categoria</label>
+            <select id="categoria" required style="background: #333; border: 1px solid transparent; padding: 12px; border-radius: 4px; color: white; font-size: 1rem;">
+                <option value="">Selecione uma categoria</option>
+                <option value="Ação">Ação</option>
+                <option value="Comédia">Comédia</option>
+                <option value="Drama">Drama</option>
+                <option value="Ficção Científica">Ficção Científica</option>
+                <option value="Terror">Terror</option>
+                <option value="Documentário">Documentário</option>
+                <option value="Outros">Outros</option>
+            </select>
+
+            <label for="minutos">Minutos Assistidos</label>
+            <input id="minutos" type="number" placeholder="Ex: 120" required>
+            
+            <input type="hidden" id="editIndex" value="-1">
+            <button type="submit" id="btnSubmit">Adicionar ao Catálogo</button>
+        </form>
+    </section>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
